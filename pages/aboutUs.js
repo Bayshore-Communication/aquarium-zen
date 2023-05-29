@@ -9,6 +9,7 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import NatureAquarium from "@/components/NatureAquarium";
 import Link from "next/link";
+import Head from "next/head";
 
 const index = () => {
   const sections = useRef([]);
@@ -74,6 +75,9 @@ const index = () => {
   };
   return (
     <>
+      <Head>
+        <title>About Us - Aquarium Zen</title>
+      </Head>
       <div ref={containerRef} className="dots-container ">
         {[
           "Our Commitment to Nature",

@@ -8,6 +8,7 @@ import Dot from "@/components/Dot";
 import Image from "next/image";
 import Hero from "@/components/Hero";
 import NatureAquarium from "@/components/NatureAquarium";
+import Head from "next/head";
 
 const index = () => {
   const sections = useRef([]);
@@ -73,6 +74,10 @@ const index = () => {
   };
   return (
     <>
+      <Head>
+        <title>Services - Aquarium Zen</title>
+      </Head>
+
       <div ref={containerRef} className="dots-container ">
         {["Design", "Installation", "Maintenance"].map((el, i) => (
           <Dot

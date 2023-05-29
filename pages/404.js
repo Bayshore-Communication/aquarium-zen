@@ -4,9 +4,9 @@ import { useRouter } from "next/router";
 
 const NotFound = () => {
   const router = useRouter();
-  //   useEffect(() => {
-  //     setTimeout(() => router.push("/"), 2000);
-  //   }, [router]);
+  useEffect(() => {
+    setTimeout(() => router.push("/"), 2000);
+  }, [router]);
 
   return (
     <div className="loading-page px-4">

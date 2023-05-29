@@ -1,8 +1,12 @@
+import Head from "next/head";
 import React from "react";
 
 const location = () => {
   return (
     <>
+      <Head>
+        <title>Hours & Location - Aquarium Zen</title>
+      </Head>
       <div className="min-h-[50vh] flex justify-center items-center bg-[#1c1c1c] text-white">
         <h1 className="text-[34px] md:text-[44px] x-md:[58] lg:text-[70px] xl:text-[90px] ">
           HOURS & LOCATION
